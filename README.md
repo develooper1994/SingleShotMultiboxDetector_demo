@@ -31,7 +31,7 @@ Not: If "from detectron2.engine import DefaultPredictor" gives an error please r
 
 # Expatiation
 There is two populer choise for image detection and segmentation. The main difference is R-CNN needs mask(white and black) for where the object should be,
-YOLO just try to classify object parts and combine them.
+YOLO just try to classify object parts and combine them. Also YOLO is just a single neural network. So that YOLO is very fast.
 
 ### R-CNN
 It is actually helps to detect object on the screen. There is bunch of versions of R-CNN
