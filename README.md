@@ -9,10 +9,17 @@ Desired Input: <br>
 Desired Output: <br>
 ![Desired Output](asset/desired_output.png)
 
-Result Output: <br>
-![Result Output](asset/detected.png)
+Faster RCNN result (detectron2) Output: <br>
+![Faster RCNN result Output](asset/detected.png)
+
+SSD result (torch hub) Output: <br>
+![SSD result Output](asset/detected_ssd.png)
+<br>
 There is a small error region at human on the right but i don't mind it. 
 It is not a full project!
+<br>
+Note: Unfortunatelly for now detectron and torchvision not supports ready to use SSD models but they are actively working on it.
+Researchers should write own their own custom detectron models right now .
 
 # Installation requirements
 I am using Anaconda Python distribution <br>
@@ -21,7 +28,7 @@ I am using Anaconda Python distribution <br>
 <br>
 #### Second Detectron2 api: <br>
 Not: use linux to make it easy <br>
-"git clone https://github.com/facebookresearch/detectron2.git" <br>
+ssd fork: "https://github.com/ArutyunovG/detectron2/tree/master" <br>
 "cd detectron2 && pip install -e ." <br>
 
 Or if you are on macOS <br>
