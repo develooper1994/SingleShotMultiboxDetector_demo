@@ -37,13 +37,13 @@ YOLO just try to classify object parts and combine them. Also YOLO is just a sin
 It is actually helps to detect object on the screen. There is bunch of versions of R-CNN
 Mask R-CNN, Fast R-CNN, Faster R-CNN(complete CNN layers), KeyPoint R-CNN. Each of them just gives probability of where the object should be.
 Algorithm gives the boxes and classifier classify them. They don't classify the object. Need a backbone or backend neural network to classify
-Generally "torchvision" using resnet50, resnet 101 classifiers. If Application should run on mobile, you can change with mobilenet_v2.
+Generally "torchvision" using resnet50, resnet101 classifiers. If Application should run on mobile, you can change with mobilenet_v2.
 Pre masked data helps to identify object. R-CNN detects ends of neural network. <br>First reduces processing requirement by segmenting image with mask.
 Than search the object by mask and backbone classify it.
 Mask R-CNN adds an extra branch into Faster R-CNN, which also predicts segmentation masks for each instance.
 ![Faster R-CNN](https://pytorch.org/tutorials/_static/img/tv_tutorial/tv_image04.png)
 Pytorch supports lots of classifiers. <br>
-### YOLO(You look only once) 
+### YOLO(You look only once)
 Splits screen into squares and searchs the objects. It doesn't use mask. YOLO is really really fast, but it slows down if the screen splits into too many pieces.
 Yolo struggles with small object because needs to same hole screen. If sampling is low, than YOLO can't detect.
 Also needs an anchor to detect. 
