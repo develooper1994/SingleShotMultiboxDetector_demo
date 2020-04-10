@@ -1,5 +1,5 @@
 # Single Shot Multibox Detector demo
-The job interview for "Turk AI" company
+The interview challenge for "Turk AI" company
 
 Dataset: https://www.cis.upenn.edu/~jshi/ped_html/PennFudanPed.zip
 
@@ -30,6 +30,7 @@ CC=clang CXX=clang++ pip install -e .<br>
 Not: If "from detectron2.engine import DefaultPredictor" gives an error please reinstall detectron-2 with compiling all dependencies.
 
 # Expatiation
+<strong>Video: https://youtu.be/7-jbJ8Ga8_s</strong> <br>
 There is two populer choise for image detection and segmentation. The main difference is R-CNN needs mask(white and black) for where the object should be,
 YOLO just try to classify object parts and combine them. Also YOLO is just a single neural network. So that YOLO is very fast.
 
