@@ -1,5 +1,5 @@
 # Single Shot Multibox Detector demo
-The interview challenge for "Turk AI" company
+The interview challenge
 
 Dataset: https://www.cis.upenn.edu/~jshi/ped_html/PennFudanPed.zip
 
